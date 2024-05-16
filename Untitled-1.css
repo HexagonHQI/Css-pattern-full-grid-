@@ -1,0 +1,38 @@
+
+.grid-container {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+
+.element {
+  background-color: #f0f0f0; 
+  border: 1px solid #ddd; 
+  text-align: center; 
+  line-height: 50px; 
+  font-size: 16px; 
+}
+
+
+.element-1 {
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 2;
+  background-color: #f99;
+  font-size: 20px;
+}
+
+.element-2 {
+  grid-row: 3;
+  grid-column: 1 / span 4;
+  background-color: #aaf;
+  font-size: 18px;
+}
+
+.element-3 {
+  grid-row: 2;
+  grid-column: 3 / span 2;
+  background-color: #cc0;
+  font-size: 18px;
+}
